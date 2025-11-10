@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, JSX } from "react";
 import Preloader from "../components/Preloader";
 import CryptoChart, { ChartDataPoint } from "../components/CryptoChart";
 

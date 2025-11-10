@@ -2,7 +2,7 @@
 
 import { motion, Variants } from "framer-motion";
 import { FaBitcoin } from "react-icons/fa";
-import React from "react";
+import React, { JSX } from "react";
 
 const preloaderStyle: React.CSSProperties = {
   height: "100vh",
