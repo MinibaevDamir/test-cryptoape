@@ -86,7 +86,7 @@ export default function Home(): JSX.Element {
         <div style={containerStyles}>
           <div style={topWrapperStyles}>
             <h2 style={{ margin: "0" }}>Solana (SOL)</h2>
-            <div style={valueStyles}>{solanaData.at(-1).value} USDT</div>
+            <div style={valueStyles}>{solanaData.at(-1)?.value} USDT</div>
           </div>
           <CryptoChart
             data={solanaData}
@@ -98,7 +98,7 @@ export default function Home(): JSX.Element {
         <div style={containerStyles}>
           <div style={topWrapperStyles}>
             <h2 style={{ margin: "0" }}>Bitcoin (BTC)</h2>
-            <div style={valueStyles}>{bitcoinData.at(-1).value} USDT</div>
+            <div style={valueStyles}>{bitcoinData.at(-1)?.value} USDT</div>
           </div>
           <CryptoChart
             data={bitcoinData}

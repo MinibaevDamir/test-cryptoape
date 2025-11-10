@@ -21,16 +21,17 @@ const titleStyle: React.CSSProperties = {
   fontWeight: "500",
 };
 
-const iconVariants: Variants = {
+const iconVariants = {
   animate: {
     rotate: [0, 360],
     scale: [1, 1.2, 1, 1.2, 1],
   },
-  transition: {
-    duration: 2.5,
-    ease: "easeInOut",
-    repeat: Infinity,
-  },
+};
+
+const transition: any = {
+  duration: 2.5,
+  ease: "easeInOut",
+  repeat: Infinity,
 };
 
 const Preloader = (): JSX.Element => {
@@ -39,7 +40,7 @@ const Preloader = (): JSX.Element => {
       <motion.div
         variants={iconVariants}
         animate="animate"
-        transition={iconVariants.transition}
+        transition={transition}
       >
         <FaBitcoin size={70} color="#F7931A" />
       </motion.div>
